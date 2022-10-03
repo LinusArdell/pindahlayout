@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnPindah;
+    EditText etNama;
 
 
     @Override
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Halaman Utama");
 
         btnPindah = findViewById(R.id.btn_pindah);
+        etNama = findViewById(R.id.et_nama);
 
         btnPindah.setOnClickListener(new View.OnClickListener() {
             @Override
